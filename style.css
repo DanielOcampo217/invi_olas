@@ -656,7 +656,6 @@
     width: 50%; /* Divide el ancho en dos columnas iguales */
     text-align: center;
     font-size: 24px;
-    padding-left: -80px;
 }
 
 /* Estilo para la columna izquierda */
@@ -667,7 +666,7 @@
 
 /* Estilo para la columna derecha */
 #horas, #segundos {
-    margin-right: -40px;
+    margin-right: -60px;
     float: right;
 }
 
