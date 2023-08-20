@@ -661,6 +661,7 @@
 
 /* Estilo para la columna izquierda */
 #dias, #minutos {
+    margin-left: -40px;
     float: left;
 }
 
