@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion Nuestra Boda N & D</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://lens-storage.storage.googleapis.com/png/3d1db1d39afe4f2cb0fb6ae062e0098a">
+    <script src="https://kit.fontawesome.com/1470bb1775.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    
+</head>
+<body onclick = "PlayAudio()">
+    <header class="header">
+        <div class="press">
+            <h1 class="titulo">N & D</h1>
+            <h2 class="titluo2">¡NOS CASAMOS!</h2>
+        </div>
+        <div class="waves">
+            <div class="wave circulo a"></div>
+            <div class="wave circulo b"></div>
+            <div class="wave circulo c"></div>
+        </div>
+    </header>
+
+    <section class="box-a">
+        <audio id="musica1" class="audio" loop>
+            <source src="./Karaoke♬ A Sky Full Of Stars - Coldplay 【No Guide Melody】 Instrumental.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            function PlayAudio(){
+                document.getElementById("musica1").play();
+            }
+        </script>
+    
+        
+        <div class="multiline-text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <p class="first-letter campw">En común acuerdo y en plena posesión</p>
+            <p class="campw24">de nuestras facultades mentales</p>    
+            <p class="campw1">(sean las que sean),</p>    
+            <p class="campw34">hemos decidido casarnos.</p>    
+        </div>
+
+        <div data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
+            <img src="./LEE02094.jpg" alt="pareja" class="img1">
+        </div>
+        
+        
+        <div class="nos_casamos">
+            <h1 class="text_lx">¡Nos Casamos!</h1>
+            <img src="./N-removebg-preview.png" alt="n & d" class="iniciales">
+        </div>
+        <div class="nombres">
+            <div class="line"></div>
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <p class="nombre tipo">Naara & Daniel</p>
+            </div>
+            
+            <div class="line"></div>
+        </div>
+        <div style="text-align: center;">
+            <hr style="width: 20%; display: inline-block;" class="linea1">
+            <span style="font-size: 24px;"><img src="./icons8-me-gusta (1).gif" alt="" class="corazons"></span>
+            <hr style="width: 20%; display: inline-block;" class="linea2">
+        </div>
+        <div class="date" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <p class="fecha">27</p>
+            <p class="mounth">─ Abril ─</p>
+            <p class="year">2024</p>
+        </div>
+        
+    </section>
+
+    <section class="box-b">
+        <img src="./icons8-me-gusta-30.png" alt="corazon" class="cora">
+        <div class="lineas">
+            <p class="first-letter espacio">Dondequiera que tú vayas, iré yo;</p>
+            <p class="espacio">y dondequiera que vivas, viviré.</p>  
+            <p class="espacio">Tu pueblo será mi pueblo y tu Dios será mi Dios.</p> 
+            <p class="espacio">Ruth 1:16</p>
+        </div>
+        
+        <div class="gran-dia" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+            <p class="text-lg tipo1">¡PARA EL GRAN</p>
+            <p class="tipo1">DÍA FALTAN!</p>
+        </div>
+    
+        <div class="cuenta">
+            <div class="columna">
+                <h1 id="dias"></h1>
+                <h1 id="horas"></h1>
+            </div>
+            <div class="columna">
+                <h1 id="minutos"></h1>
+                <h1 id="segundos"></h1>
+            </div>
+            <script>
+                // Establecer la fecha objetivo de la cuenta regresiva (puedes ajustarla según tus necesidades)
+                var targetDate = new Date("2024-04-27T23:59:59");
+        
+                // Actualizar la cuenta regresiva cada segundo
+                var countdownInterval = setInterval(updateCountdown, 1000);
+        
+                function updateCountdown() {
+                    var currentDate = new Date();
+                    var timeDifference = targetDate.getTime() - currentDate.getTime();
+        
+                    if (timeDifference > 0) {
+                        // Calcular los días, horas, minutos y segundos restantes
+                        var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        
+                        // Actualizar el contenido de las columnas con el tiempo restante
+                        document.getElementById("dias").innerHTML = days + "Días";
+                        document.getElementById("horas").innerHTML = hours + "Horas";
+                        document.getElementById("minutos").innerHTML = minutes + "Min.";
+                        document.getElementById("segundos").innerHTML = seconds + "Seg";
+                    } else {
+                        // Si el tiempo restante es menor o igual a cero, mostrar un mensaje final
+                        document.getElementById("dias").innerHTML = "0 Días";
+                        document.getElementById("horas").innerHTML = "0 Horas";
+                        document.getElementById("minutos").innerHTML = "0 Min.";
+                        document.getElementById("segundos").innerHTML = "0 Seg";
+                        clearInterval(countdownInterval);
+                    }
+                }
+            </script>
+        </div>
+        
+    </section>
+
+    <section class="box-c">
+        <div data-aos="zoom-in">
+            <img src="./fiestanegromate-100x100.png" alt="" class="artificial">
+        </div>
+        
+        <div class="novios">
+            <div data-aos="fade-up"><p>¡Nos casamos en</p></div>
+            <div data-aos="fade-left"><p class="lugar"><strong>CDMX!</strong></p></div>
+        </div>
+        <p class="first-letter text-bendi">Con la bendición de Dios</p> 
+        <p class="text-bendi espacios">y nuestros padres.</p>
+        <img src="./noviaicono-100x100.png" alt="" class="novia">
+        <div class="padres-nov">
+            <p class="madre">Amelia Linares Neri</p>
+            <p class="madre sep">Isaias Emilio Rodríguez Ramos</p>
+        </div>
+        <img src="./novioicono-100x100.png" alt="" class="novia nov">
+    </section>
+
+    <section class="box-d">
+        <div class="textlugar" data-aos="fade-up"
+        data-aos-duration="3000">
+            <p class="lugar tipo text">Capilla</p>
+            <p class="lugar tipo espaci1 text">"Jardin Princess"</p>
+        </div>
+    </section>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide carro" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./203713442_3967019136729974_5528207250041074503_n.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./197574204_3967019430063278_2182903737471119714_n.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+        </div>
+    </div>
+
+    <section class="lugar_evento">
+        <div class="box">
+            <p class="ceremonia first-letter datos123">CEREMONIA</p>
+            <p class="ceremonia first-letter dato12">RELIGIOSA</p>
+            <p class="horaa first-letter"><strong>HORA:</strong> 5:30 P.M.</p>
+            <div class="maps">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+            </div>
+            <p class="hora first-letter">DIRECCIÓN:</p>
+            <p class="salon d2">Venustiano Carranza 133-B,</p>
+            <p class="salon d2">Presidentes de México, Iztapalapa,</p> 
+            <p class="salon d2"> 09740 Ciudad de México, CDMX</p>  
+            <div class="boton"  data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <a href="https://goo.gl/maps/mrRuF7DvqxpzsXom9" target="_blank" class="btn"><button>VER UBICACIÓN</button></a>
+            </div>
+        </div>
+        <div  data-aos="fade-up"
+        data-aos-duration="3000">
+            <img src="./carrito-300x77.png" alt="" class="carro12">
+        </div>
+        
+    </section>
+
+    <section class="box-f">
+        <div class="textlugar" data-aos="fade-up"
+        data-aos-duration="3000">
+            <p class="lugar tipo">Salón</p>
+            <p class="lugar tipo espaci1 text">"Jardin Princess"</p>
+        </div>
+    </section>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide arriba" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./741123_496678090430780_1295104671_o.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./nueva_salon_1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./nueva_salon_2.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+
+    <section class="lugar_evento">
+        <div class="box">
+            <p class="ceremonia">RECEPCIÓN</p>
+            <p class="horaa">Hora: 6:30 P.M.</p>
+            <div class="maps">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+            </div>
+            <p class="hora first-letter">DIRECCIÓN:</p>
+            <p class="salon">Venustiano Carranza 133-B,</p>
+            <p class="salon">Presidentes de México, Iztapalapa,</p> 
+            <p class="salon"> 09740 Ciudad de México, CDMX</p>  
+            <div class="boton"  data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <a href="https://goo.gl/maps/mrRuF7DvqxpzsXom9" target="_blank"><button class="btn">VER UBICACIÓN</button></a>
+            </div>
+        </div>
+        <div class="vetimenta">
+            <div data-aos="fade-up">
+                <p class="codigo tipo">Código de</p> 
+                <p class="codigo up tipo">Vestimenta</p>  
+            </div>          
+            <p class="froma first-letter">Etiqueta</p>
+            <img src="./WhatsApp_Image_2023-08-19_at_8.36.17_PM-removebg-preview.png" alt="" class="dress">
+            <div class="retriccion">
+                <p class="shedron">Favor de no usar Blanco, Rojo o Shedron</p>
+            </div>
+            <div class="colores_restri">
+                <ul class="cl">
+                    <li class="rojo"><img src="./38666.png" alt="blanco"></li>
+                    <li class="rojo"><img src="./350x500_destacada-1.jpg" alt="rojo"></li>
+                    <li class="rojo"><img src="./WhatsApp Image 2023-08-19 at 8.41.18 PM.jpeg" alt="shedron"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="regalo" data-aos="fade-up">
+            <p class="codigo tipo">Sugerencia</p>
+            <p class="codigo tipo regalos">De Regalos</p>
+            <p class="agra">Prometemos usar el dinero que los invitados</p>
+            <p class="agra">tengan a bien obsequiearnos</p>
+            <p class="agra">únicamente para el pago del predial.</p>
+            <img class="risas" src="./sonrisa.gif" alt="">
+        </div>
+        <div class="bancoaz">
+            <img src="./WhatsApp_Image_2023-08-19_at_8.49.26_PM-removebg-preview.png" alt="" class="banco">
+        </div>
+        <p class="datos_banc">Dato Bancario</p>
+        <p class="bancos">Banco: Azteca</p>
+        <p class="bancos">Clabe Interbancaria:</p>
+        <p class="bancos"> 1271 8001 3828 5639 91</p>
+        <p class="bancos">Naara Rodriguez</p>
+
+        <div class="title" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
+            <p class="name">N & D</p>
+        </div>
+        <!--Aqui van a ir fotos-->
+
+        <div style="text-align: center;">
+            <hr style="width: 100%; display: inline-block;" class="linea1">
+            <span style="font-size: 24px;"><img src="./icons8-instagram.gif" alt="" class="corazons"></span>
+            <hr style="width: 100%; display: inline-block;" class="linea2">
+        </div>
+
+        <div class="slider">
+            <span style="--i:1"><img src="./WhatsApp Image 2024-02-12 at 9.03.27 PM.jpeg" alt=""></span>
+            <span style="--i:2"><img src="./WhatsApp Image 2024-02-12 at 9.03.30 PM.jpeg" alt=""></span>
+            <span style="--i:3"><img src="./WhatsApp Image 2024-02-12 at 9.03.18 PM.jpeg" alt=""></span>
+            <span style="--i:4"><img src="./WhatsApp Image 2024-02-12 at 9.03.16 PM.jpeg" alt=""></span>
+            <span style="--i:5"><img src="./WhatsApp Image 2024-02-12 at 8.47.07 PM.jpeg" alt=""></span>
+            <span style="--i:6"><img src="./WhatsApp Image 2024-02-12 at 9.03.34 PM.jpeg" alt=""></span>
+            <span style="--i:7"><img src="./WhatsApp Image 2024-02-12 at 9.03.08 PM.jpeg" alt=""></span>
+            <span style="--i:8"><img src="./LEE02062.jpg" alt=""></span>
+        </div>
+
+        <div class="recu" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"> 
+            <p class="recuerda">Recuerda tomar muchas fotos</p>
+            <p class="recuerda ESP">y utiliza este hashtag en</p>
+            <p class="recuerda ESP">todas las fotos que subas</p>
+            <p class="recuerda ESP">a redes sociales</p>
+            <div  data-aos="fade-up"
+            data-aos-duration="3000">
+            <p class="recuerda hast">#BodaN&D</p>
+            </div>
+            
+        </div>
+
+        <div class="cita" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="confirma">
+                <p class="co tam">Confirma tu</p>
+                <p class="co1 tam">Asistencia</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="imagen_bod grid-col-1">
+                <img src="./WhatsApp Image 2024-02-12 at 9.03.34 PM.jpeg" alt="" class="im">
+            </div>
+            
+            <div class="asistencia">
+                <div class="envia">
+                    <p class="comple">Completa y envía</p>
+                    <p class="comple es">el siguiente formulario.</p>
+                </div>
+                <div class="as">
+                    <p class="may"><strong>Confirma tu asistencia:</strong></p>
+                    <div class="1">
+                        <input type="checkbox" name="opcion" id="opcion1" class="checkbox-circular">
+                        <label for="opcion1">Si asistiermos.</label>
+                    </div>
+                    <div class="2">
+                        <input type="checkbox" name="opcion" id="opcion2" class="checkbox-circular">
+                        <label for="2s">Lo siento, no podremos asistir.</label>
+                    </div>
+                    <script>
+                        const checkboxes = document.querySelectorAll('input[name="opcion"]');
+                      
+                        checkboxes.forEach(checkbox => {
+                          checkbox.addEventListener('change', function() {
+                            if (this.checked) {
+                              checkboxes.forEach(cb => {
+                                if (cb !== this) {
+                                  cb.checked = false;
+                                }
+                              });
+                            }
+                          });
+                        });
+                      </script>
+                </div>
+               
+                <div class="texto-mas">
+                    <p class="may1"><strong>Dedicatoria para N & D:</strong></p>
+                    <div class="caja1">
+                        <input type="text" name="cajas" id="caja" class="caja">
+                    </div>
+                </div>
+                <div class="bot">
+                    <button class="enviardb">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="conta">
+            <p class="gracias">¡Gracias por compartir este</p>
+            <p class="gracias s6s">momento tan importante</p>
+            <p class="gracias s6s">en nuestras vidas!</p>
+        </div>
+        <div class="fin" data-aos="fade-up"
+        data-aos-duration="3000">
+            <p class="nyd">N & D</p>
+            <p class="fech">27 - 04 - 24</p>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
